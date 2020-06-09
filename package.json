@@ -1,0 +1,27 @@
+{
+  "name": "my-kssr-list",
+  "version": "1.0.0",
+  "description": "Library for programmatically fetch Content Standards & Learning Standards from DSKP",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://apitlekays@github.com/apitlekays/MyKSSRList.git"
+  },
+  "author": "Hafiz Hanif",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apitlekays/MyKSSRList/issues"
+  },
+  "resolutions": {
+    "braces": "^2.3.2"
+  },
+  "homepage": "https://github.com/apitlekays/MyKSSRList#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "jest": "^25.3.0"
+  },
+  "dependencies": {}
+}

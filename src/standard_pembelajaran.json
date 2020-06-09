@@ -1,0 +1,200 @@
+[
+    {
+        "id": "1",
+        "subject_id": "2",
+        "sk_id": "1.1",
+        "standard_pembelajaran": "1.1.1 Recognise and reproduce with support a limited range of high frequency target language phonemes"
+    },
+    {
+        "id": "2",
+        "subject_id": "2",
+        "sk_id": "1.2",
+        "standard_pembelajaran": "1.2.1 Understand with support the main idea of very simple phrases and sentences"
+    },
+    {
+        "id": "3",
+        "subject_id": "2",
+        "sk_id": "1.2",
+        "standard_pembelajaran": "1.2.2 Understand with support specific information and details of very simple phrases and sentences"
+    },
+    {
+        "id": "4",
+        "subject_id": "2",
+        "sk_id": "1.2",
+        "standard_pembelajaran": "1.2.3 Understand with a high degree of support very short simple narratives"
+    },
+    {
+        "id": "5",
+        "subject_id": "2",
+        "sk_id": "1.2",
+        "standard_pembelajaran": "1.2.4 Understand short basic supported classroom instructions"
+    },
+    {
+        "id": "6",
+        "subject_id": "2",
+        "sk_id": "1.2",
+        "standard_pembelajaran": "1.2.5 Understand short supported questions"
+    },
+    {
+        "id": "7",
+        "subject_id": "2",
+        "sk_id": "1.3",
+        "standard_pembelajaran": "1.3.1 Predict words they will hear by using knowledge of a topic"
+    },
+    {
+        "id": "8",
+        "subject_id": "2",
+        "sk_id": "2.1",
+        "standard_pembelajaran": "2.1.1 Give very basic personal information using fixed phrases"
+    },
+    {
+        "id": "9",
+        "subject_id": "2",
+        "sk_id": "2.1",
+        "standard_pembelajaran": "2.1.2 Find out about very basic personal information using fixed phrases"
+    },
+    {
+        "id": "10",
+        "subject_id": "2",
+        "sk_id": "2.1",
+        "standard_pembelajaran": "2.1.3 Express basic likes and dislikes"
+    },
+    {
+        "id": "11",
+        "subject_id": "2",
+        "sk_id": "2.1",
+        "standard_pembelajaran": "2.1.4 Greet, say goodbye, and express thanks using suitable fixed phrases"
+    },
+    {
+        "id": "12",
+        "subject_id": "2",
+        "sk_id": "2.1",
+        "standard_pembelajaran": "2.1.5 Name or describe objects using suitable words from word sets"
+    },
+    {
+        "id": "13",
+        "subject_id": "2",
+        "sk_id": "2.2",
+        "standard_pembelajaran": "2.2.2 Ask for attention or help from a teacher or classmate using one word or a fixed phrase"
+    },
+    {
+        "id": "14",
+        "subject_id": "2",
+        "sk_id": "2.3",
+        "standard_pembelajaran": "2.3.1 Introduce self to an audience using fixed phrases"
+    },
+    {
+        "id": "15",
+        "subject_id": "2",
+        "sk_id": "3.1",
+        "standard_pembelajaran": "3.1.1 Identify and recognise the shapes of the letters in the alphabet"
+    },
+    {
+        "id": "16",
+        "subject_id": "2",
+        "sk_id": "3.1",
+        "standard_pembelajaran": "3.1.2 Recognise and sound out with support beginning, medial and final sounds in a word"
+    },
+    {
+        "id": "17",
+        "subject_id": "2",
+        "sk_id": "3.1",
+        "standard_pembelajaran": "3.1.3 Blend phonemes (CVC, CCVC)"
+    },
+    {
+        "id": "18",
+        "subject_id": "2",
+        "sk_id": "3.1",
+        "standard_pembelajaran": "3.1.4 Segment phonemes (CVC, CCVC)"
+    },
+    {
+        "id": "19",
+        "subject_id": "2",
+        "sk_id": "3.2",
+        "standard_pembelajaran": "3.2.1 Understand the main idea of very simple phrases and sentences"
+    },
+    {
+        "id": "20",
+        "subject_id": "2",
+        "sk_id": "3.2",
+        "standard_pembelajaran": "3.2.2 Understand specific information and details of very simple phrases and sentences"
+    },
+    {
+        "id": "21",
+        "subject_id": "2",
+        "sk_id": "3.2",
+        "standard_pembelajaran": "3.2.3 i) Use visuals on the page to help understand a word or phrase ii) Identify and remember high frequency sound and letter patterns"
+    },
+    {
+        "id": "22",
+        "subject_id": "2",
+        "sk_id": "3.2",
+        "standard_pembelajaran": "3.2.4 Use with support a simple picture dictionary to find, list and categorise words from Year 1 topics and themes"
+    },
+    {
+        "id": "23",
+        "subject_id": "2",
+        "sk_id": "3.3",
+        "standard_pembelajaran": "3.3.1 Read and enjoy simple print and digital games at word level"
+    },
+    {
+        "id": "24",
+        "subject_id": "2",
+        "sk_id": "4.1",
+        "standard_pembelajaran": "4.1.1 i) Demonstrate fine motor control of hands and fingers by using pen or pencil correctly ii) Demonstrate correct posture and pen hold grip iii) Develop hand-eye coordination through drawing lines and patterns"
+    },
+    {
+        "id": "25",
+        "subject_id": "2",
+        "sk_id": "4.1",
+        "standard_pembelajaran": "4.1.2 i) Form upper and lower case letters of regular size and shape** **preliterate children only ii) write letters and words in a straight line from left to right with regular spaces between words and spaces* *all children iii) copy letters and familiar high frequency words and phrases correctly* *all children"
+    },
+    {
+        "id": "26",
+        "subject_id": "2",
+        "sk_id": "4.2",
+        "standard_pembelajaran": "4.2.1 Give very basic personal information using fixed phrases"
+    },
+    {
+        "id": "27",
+        "subject_id": "2",
+        "sk_id": "4.2",
+        "standard_pembelajaran": "4.2.2 Greet, say goodbye, and express thanks using suitable fixed phrases"
+    },
+    {
+        "id": "28",
+        "subject_id": "2",
+        "sk_id": "4.2",
+        "standard_pembelajaran": "4.2.3 Express basic likes and dislikes"
+    },
+    {
+        "id": "29",
+        "subject_id": "2",
+        "sk_id": "4.2",
+        "standard_pembelajaran": "4.2.4 Name or describe objects using suitable words from word sets"
+    },
+    {
+        "id": "30",
+        "subject_id": "2",
+        "sk_id": "4.2",
+        "standard_pembelajaran": "4.2.5 Connect words and proper names using ‘and’"
+    },
+    {
+        "id": "31",
+        "subject_id": "2",
+        "sk_id": "4.3",
+        "standard_pembelajaran": "4.3.1 Use capital letters appropriately in personal and place names"
+    },
+    {
+        "id": "32",
+        "subject_id": "2",
+        "sk_id": "4.3",
+        "standard_pembelajaran": "4.3.2 Spell familiar high frequency words accurately"
+    },
+    {
+        "id": "33",
+        "subject_id": "2",
+        "sk_id": "4.3",
+        "standard_pembelajaran": "4.3.3 Plan, and write words and phrases"
+    }
+]
