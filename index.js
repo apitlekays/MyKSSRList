@@ -11,6 +11,18 @@ module.exports = {
         let subjects = subjekList.filter(function (value){
             return value.id_tahun === idTahun
         })
-        return subjects
+        return subjects;
+    },
+    getStandardKandunganBySubjectID: function (subjectID) {
+        let Sk = standardKandungan.filter(function (value){
+            return value.id_subjek === subjectID
+        })
+        return Sk;
+    },
+    getStandardPembelajaranBySKID: function (subjectID, skID) {
+        let Sp = standardPembelajaran.filter(function (value){
+            return value.subject_id === subjectID && value.sk_id === skID
+        })
+        return Sp;
     }
 }
