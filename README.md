@@ -1,6 +1,9 @@
 # MyKSSRList
 Library for programmatically fetch Content Standards &amp; Learning Standards from DSKP
 
+## WARNING
+This repo has partial data. Data will be updated from time to time until it is 100% coverage for KSSR and KSSM
+
 # Install
 `npm i my-kssr-list`
 
@@ -13,169 +16,258 @@ Library for programmatically fetch Content Standards &amp; Learning Standards fr
 
 # Docs
 
-getStateById(id)
+getAllTahun()
 ---------------
-
-It accepts a valid `id` eg: `'1'` and returns *State Details*
-
-type: **json**
-
-```js
-{
-    "id": "1",
-    "shortname": "JHR",
-    "name": "Johor",
-    "iso": "MY-01"
-}
-```
-
-getStateByShortname(code)
----------------
-
-It accepts a valid `shortname` eg: `'JHR'` and returns *State Details*
-
-type: **json**
-
-```js
-{
-    "id": "1",
-    "shortname": "JHR",
-    "name": "Johor",
-    "iso": "MY-01"
-}
-```
-
-getDistrictById(id)
----------------
-
-It accepts a valid `id` eg: `'2'`and returns *District Details*
-
-type: **json**
-
-```js
-{
-    "id": "2",
-    "name": "PPD MANJUNG",
-    "state_id": "8"
-}
-```
-
-getSchoolByCode(schoolcode)
----------------
-
-It accepts a valid `schoolcode` eg: `'YEE6101'`and returns *School Details*
-
-type: **json**
-
-```js
-{
-    "id": "10153",
-    "district_id": "136",
-    "name": "SEKOLAH MENENGAH KEBANGSAAN SG PAOH",
-    "schoolcode": "YEE6101",
-    "level": "Menengah",
-    "address": "PETI SURAT 160",
-    "postcode": "96107",
-    "city": "SARIKEI",
-    "email": "**REDACTED**",
-    "coordinatexx": "111.46735",
-    "coordinateyy": "2.021566667"
-}
-```
-
-getDisctrictOfState(state_id)
----------------
-
-It accepts a valid `state_id` and returns *District Details*
-
-type: **json**
-
-
-```js
-[{
-    "id": "1",
-    "name": "PPD BATANG PADANG",
-    "state_id": "8"
-},
-{
-    "id": "2",
-    "name": "PPD MANJUNG",
-    "state_id": "8"
-},
-{
-    "id": "3",
-    "name": "PPD KINTA UTARA",
-    "state_id": "8"
-},
-{
-    "id": "4",
-    "name": "PPD KINTA SELATAN",
-    "state_id": "8"
-} ... ]
-```
-
-getSchoolsOfDisctrict(district_id)
----------------
-
-It accepts a valid `district_d` e.g: `'1'` and returns *School Details*
-
-type: **json**
-
-```js
-[{
-    "id": "1",
-    "district_id": "1",
-    "name": "SEKOLAH KEBANGSAAN TOH TANDEWA SAKTI",
-    "schoolcode": "ABA0001",
-    "level": "Rendah",
-    "address": "JALAN KELAB",
-    "postcode": "35000",
-    "city": "TAPAH",
-    "email": "**REDACTED**",
-    "coordinatexx": "101.255932",
-    "coordinateyy": "4.196633"
-},
-{
-    "id": "2",
-    "district_id": "1",
-    "name": "SEKOLAH KEBANGSAAN PENDITA ZA'BA",
-    "schoolcode": "ABA0002",
-    "level": "Rendah",
-    "address": "JALAN TAPAH ROAD",
-    "postcode": "35400",
-    "city": "TAPAH ROAD",
-    "email": "**REDACTED**",
-    "coordinatexx": "101.2006171",
-    "coordinateyy": "4.178275806"
-} ...]
-```
-
-getAllStates()
----------------
-It returns **all States**
+It returns **all Tahun**
 
 type: **array of json**
 
 ```js
 [
     {
-		"id": "1",
-		"sortname": "JHR",
-		"name": "Johor",
-		"iso": "MY-01"
-	},
-	{
-		"id": "2",
-		"sortname": "KDH",
-		"name": "Kedah",
-		"iso": "MY-02"
-	},
-	{
-		"id": "3",
-		"sortname": "KTN",
-		"name": "Kelantan",
-		"iso": "MY-03"
-	}...
+        "id": "1",
+        "tahun": "Tahun 1"
+    },
+    {
+        "id": "2",
+        "tahun": "Tahun 2"
+    },
+    {
+        "id": "3",
+        "tahun": "Tahun 3"
+    },
+    {
+        "id": "4",
+        "tahun": "Tahun 4"
+    },
+    {
+        "id": "5",
+        "tahun": "Tahun 5"
+    },
+    {
+        "id": "6",
+        "tahun": "Tahun 6"
+    }
+]
+```
+
+getSubjectsByTahunID(tahunID)
+---------------
+
+It accepts a valid `id` eg: `'1'` from `tahun` and returns *Subject Details*
+
+type: **array of json**
+
+```js
+[
+    {
+        "id": "1",
+        "id_tahun": "1",
+        "subjek": "Bahasa Melayu"
+    },
+    {
+        "id": "2",
+        "id_tahun": "1",
+        "subjek": "Bahasa Inggeris"
+    },
+    {
+        "id": "3",
+        "id_tahun": "1",
+        "subjek": "Bahasa Cina"
+    },
+    {
+        "id": "4",
+        "id_tahun": "1",
+        "subjek": "Bahasa Tamil"
+    },
+    {
+        "id": "5",
+        "id_tahun": "1",
+        "subjek": "Matematik"
+    },
+    {
+        "id": "6",
+        "id_tahun": "1",
+        "subjek": "Pendidikan Islam"
+    },
+    {
+        "id": "7",
+        "id_tahun": "1",
+        "subjek": "Pendidikan Moral"
+    },
+    {
+        "id": "8",
+        "id_tahun": "1",
+        "subjek": "Sains"
+    },
+    {
+        "id": "9",
+        "id_tahun": "1",
+        "subjek": "Pendidikan Jasmani dan Kesihatan"
+    },
+    {
+        "id": "10",
+        "id_tahun": "1",
+        "subjek": "Pendidikan Kesenian"
+    },
+    {
+        "id": "11",
+        "id_tahun": "1",
+        "subjek": "Bahasa Arab"
+    },
+    {
+        "id": "12",
+        "id_tahun": "1",
+        "subjek": "Bahasa Iban"
+    },
+    {
+        "id": "13",
+        "id_tahun": "1",
+        "subjek": "Bahasa Kadazandusun"
+    },
+    {
+        "id": "14",
+        "id_tahun": "1",
+        "subjek": "Bahasa Semai"
+    }
+]
+```
+
+getStandardKandunganBySubjectID(subjectID)
+---------------
+
+It accepts a valid `subject ID` eg: `'1'` and returns *Standard Kandungan Details*
+
+type: **list of json**
+
+```js
+[
+    {
+        "id": "13",
+        "id_subjek": "1",
+        "id_sk": "1.1",
+        "standard_kandungan": "Mendengar dan memberikan respons"
+    },
+    {
+        "id": "14",
+        "id_subjek": "1",
+        "id_sk": "1.2",
+        "standard_kandungan": "Bertutur untuk menyampaikan maklumat dan idea bagi pelbagai tujuan"
+    },
+    {
+        "id": "15",
+        "id_subjek": "1",
+        "id_sk": "2.1",
+        "standard_kandungan": "Asas membaca dan memahami"
+    },
+    {
+        "id": "16",
+        "id_subjek": "1",
+        "id_sk": "2.2",
+        "standard_kandungan": "Membaca, memahami, dan menaakul bahan grafik dan bukan grafik"
+    },
+    {
+        "id": "17",
+        "id_subjek": "1",
+        "id_sk": "2.3",
+        "standard_kandungan": "Membaca dan mengapresiasi karya sastera dan bukan sastera"
+    },
+    {
+        "id": "18",
+        "id_subjek": "1",
+        "id_sk": "3.1",
+        "standard_kandungan": "Asas menulis"
+    },
+    {
+        "id": "19",
+        "id_subjek": "1",
+        "id_sk": "3.2",
+        "standard_kandungan": "Menulis perkataan, frasa, dan ayat yang bermakna"
+    },
+    {
+        "id": "20",
+        "id_subjek": "1",
+        "id_sk": "3.3",
+        "standard_kandungan": "Menghasilkan penulisan"
+    },
+    {
+        "id": "21",
+        "id_subjek": "1",
+        "id_sk": "4.1",
+        "standard_kandungan": "Mengaplikasikan unsur keindahan dan kesantunan bahasa dalam bahan sastera"
+    },
+    {
+        "id": "22",
+        "id_subjek": "1",
+        "id_sk": "4.2",
+        "standard_kandungan": "Menghayati keindahan dan kesantunan bahasa dalam bahan sastera"
+    },
+    {
+        "id": "23",
+        "id_subjek": "1",
+        "id_sk": "4.3",
+        "standard_kandungan": "Menghasilkan bahan sastera dengan menyerapkan keindahan dan kesantunan bahasa serta mempersembahkannya secara kreatif"
+    },
+    {
+        "id": "24",
+        "id_subjek": "1",
+        "id_sk": "5.1",
+        "standard_kandungan": "Memahami fungsi dan menggunakan golongan kata mengikut konteks"
+    },
+    {
+        "id": "25",
+        "id_subjek": "1",
+        "id_sk": "5.2",
+        "standard_kandungan": "Memahami dan menggunakan pembentukan kata mengikut konteks"
+    },
+    {
+        "id": "26",
+        "id_subjek": "1",
+        "id_sk": "5.3",
+        "standard_kandungan": "Memahami dan membina ayat mengikut konteks"
+    }
+]
+```
+
+getStandardPembelajaranBySKID(subjectID, skID)
+---------------
+
+It accepts a valid `subjectID` eg: `'2'` and a valid `skID` eg: `'4.2'` returns *Standard Pembelajaran Details*
+
+type: **list of json**
+
+```js
+[
+    {
+        "id": "26",
+        "subject_id": "2",
+        "sk_id": "4.2",
+        "standard_pembelajaran": "4.2.1 Give very basic personal information using fixed phrases"
+    },
+    {
+        "id": "27",
+        "subject_id": "2",
+        "sk_id": "4.2",
+        "standard_pembelajaran": "4.2.2 Greet, say goodbye, and express thanks using suitable fixed phrases"
+    },
+    {
+        "id": "28",
+        "subject_id": "2",
+        "sk_id": "4.2",
+        "standard_pembelajaran": "4.2.3 Express basic likes and dislikes"
+    },
+    {
+        "id": "29",
+        "subject_id": "2",
+        "sk_id": "4.2",
+        "standard_pembelajaran": "4.2.4 Name or describe objects using suitable words from word sets"
+    },
+    {
+        "id": "30",
+        "subject_id": "2",
+        "sk_id": "4.2",
+        "standard_pembelajaran": "4.2.5 Connect words and proper names using ‘and’"
+    }
 ]
 ```
 
@@ -185,19 +277,3 @@ Change Logs
 **v1.0.0**
 
 1. Initial commit.
-
-**v1.0.1**
-
-1. Redacted `email` addresses from the example codes
-2. Added new funtion `getSchoolByCode`
-3. Edited README.md to reflect new changes
-
-**v1.0.2**
-
-1. Change `sortname` identifier in `state.json` to `shortname` //Thanks Vicknesh!
-2. Introduce a new method `getStateByShortname`
-
-**v1.1.0**
-
-1. Updating the school list `school.json` based on latest data from MoE (January 2020)
-2. Take note that with this update, id for each school is different from the previous version. Potentially breaking changes, if you refer the school id in your code from version 1.0.2.
